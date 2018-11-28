@@ -92,7 +92,7 @@ Enhancing Python with Custom C Extensions:	https://stackabuse.com/enhancing-pyth
 Lauri's Blog - AXI Direct Memory Access : 	https://lauri.xn--vsandi-pxa.com/hdl/zynq/xilinx-dma.html
 
 
-A פטמ/ <a href="https://github.com/altuSemi/PYNQ4Zybo/tree/master/overlays/dma target="_blank">overlay created following the above guide in Vivado 2016.3 was used in the design process of the dma package.
+A PYNQ <a href="https://github.com/altuSemi/PYNQ4Zybo/tree/master/overlays/dma target="_blank">overlay created following the above guide in Vivado 2016.3 was used in the design process of the dma package.
 dma overlay files are here: 
 
 It can be tested with the following <a href="https://busybox.net/about.html" target="_blank">busybox</a> <a href=https://github.com/altuSemi/PYNQ4Zybo/blob/master/dma/busybox.sh target="_blank">script</a>, or with this <a href="https://github.com/altuSemi/PYNQ4Zybo/blob/master/jupyter_notebooks/dma.ipynb" target="_blank">jupyter notebook</a>.
