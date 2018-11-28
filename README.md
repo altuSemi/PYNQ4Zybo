@@ -78,7 +78,7 @@ Jupyter notebook can be found here:
 ### 2. <a href="https://www.youtube.com/watch?v=LoLCtSzj9BU" target="_blank"> Function acceleration with Zynq</a> - Low pass filter acceleration with PL logic and AXI dma.
 The contiguous memory allocation and dma access failed to work following this porting guide.
 Instead a python c extension was designed to pass data from python to the PL and back via the AXI dma. This extension is currently supporting a max buffer length of 16K word (unit32).
-The package is installed by copying the <a href="https://github.com/altuSemi/PYNQ4Zybo/tree/master/dma" target="_blank">dma</a> directory to the board (vias the samba server), and executing insidet he dma directory:
+The package is installed by copying the <a href="https://github.com/altuSemi/PYNQ4Zybo/tree/master/dma" target="_blank">dma</a> directory to the board (via the samba server), and executing inside the dma directory:
 ```
 pip3.6 install . 
 ```
@@ -94,6 +94,8 @@ dma overlay files are here: https://github.com/altuSemi/PYNQ4Zybo/tree/master/ov
 It can be tested with the following <a href="https://busybox.net/about.html" target="_blank">busybox</a> script: https://github.com/altuSemi/PYNQ4Zybo/blob/master/dma/busybox.sh, or with this <a href="https://github.com/altuSemi/PYNQ4Zybo/blob/master/jupyter_notebooks/dma.ipynb" target="_blank">jupyter notebook</a>.
 <a href=http://fpga.org/2013/05/28/how-to-design-and-access-a-memory-mapped-device-part-two/ target="_blank">generic-uio</a> was used instead of devmem in the c code to overcome non-root permissions issue.
 
+The <a href="https://github.com/altuSemi/PYNQ4Zybo/blob/master/jupyter_notebooks/FIR%20accelerator.ipynb target="_blank"> FIR accelerator notebook </a> is using the dma package to perform the FIR calculation acceleration using the PL DSP blocks, and achieves a X14 acceleration ratio with respect to software based FIR.
+	
 
 
 Enjoy!
