@@ -92,13 +92,14 @@ The package is installed by copying the <a href="https://github.com/altuSemi/PYN
 ```
 pip3.6 install . 
 ```
-The code of the dma package is based on the following references:
+The code of the dma package is based on Lauri's Blog above, as well as the following references:
 
 Returning a numphy array from c: 		http://acooke.org/cute/ExampleCod0.html
 
 Enhancing Python with Custom C Extensions:	https://stackabuse.com/enhancing-python-with-custom-c-extensions/
 
 The dma overlay can be tested with the following <a href="https://busybox.net/about.html" target="_blank">busybox</a> <a href=https://github.com/altuSemi/PYNQ4Zybo/blob/master/dma/busybox.sh target="_blank">script</a>, or with this <a href="https://github.com/altuSemi/PYNQ4Zybo/blob/master/jupyter_notebooks/dma.ipynb" target="_blank">PYNQ4Zybo jupyter notebook</a>.
+
 <a href=http://fpga.org/2013/05/28/how-to-design-and-access-a-memory-mapped-device-part-two/ target="_blank">generic-uio</a> was used instead of devmem in the c code of the dma package to overcome non-root permissions issue.
 
 ### 3. FIR overlay
