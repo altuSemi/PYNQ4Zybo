@@ -95,7 +95,7 @@ dma overlay files are here: https://github.com/altuSemi/PYNQ4Zybo/tree/master/ov
 It can be tested with the following <a href="https://busybox.net/about.html" target="_blank">busybox</a> <a href=https://github.com/altuSemi/PYNQ4Zybo/blob/master/dma/busybox.sh target="_blank">script</a>, or with this <a href="https://github.com/altuSemi/PYNQ4Zybo/blob/master/jupyter_notebooks/dma.ipynb" target="_blank">jupyter notebook</a>.
 <a href=http://fpga.org/2013/05/28/how-to-design-and-access-a-memory-mapped-device-part-two/ target="_blank">generic-uio</a> was used instead of devmem in the c code to overcome non-root permissions issue.
 
-The <a href="https://github.com/altuSemi/PYNQ4Zybo/blob/master/jupyter_notebooks/FIR%20accelerator.ipynb target="_blank"> FIR accelerator notebook </a> is using the dma package to perform the FIR calculation acceleration using the PL DSP blocks, and achieves a X14 acceleration ratio with respect to software based FIR.
+The <a href="https://github.com/altuSemi/PYNQ4Zybo/blob/master/jupyter_notebooks/FIR%20accelerator.ipynb" target="_blank"> FIR accelerator notebook </a> is using the dma package to perform the FIR calculation acceleration using the PL DSP blocks, and achieves a X14 acceleration ratio with respect to software based FIR.
 	
 
 
