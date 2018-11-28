@@ -85,5 +85,11 @@ pip3.6 instyall .
 The code of the dma package is based on the following references:
 
 
-Returning a numphy array from c: http://acooke.org/cute/ExampleCod0.html
+Returning a numphy array from c: 		http://acooke.org/cute/ExampleCod0.html
+Enhancing Python with Custom C Extensions:	https://stackabuse.com/enhancing-python-with-custom-c-extensions/
+Lauri's Blog - AXI Direct Memory Access : 	https://lauri.xn--vsandi-pxa.com/hdl/zynq/xilinx-dma.html
+generic-uio was used instead of devmem to overcome non-root permissions issue.
+
+Enjoy!
+
 
