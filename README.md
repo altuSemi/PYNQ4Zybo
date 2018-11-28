@@ -29,4 +29,13 @@ source /opt/Xilinx/SDK/2016.4/settings64.sh
 source /opt/Xilinx/Vivado/2016.4/settings64.sh
 export CROSS_COMPILE=arm-xilinx-linux-gnueabi-
 ```
-The following steps are based on a similar pynq porting method targeted for the <a href="https://superuser.blog/pynq-linux-on-zedboard/" target="_blank">Zeb board</a>:
+The boot ifle compilation are baesd on steps 1 - 3 menrioned in this <a href="https://superuser.blog/pynq-linux-on-zedboard/" target="_blank">Zeb board</a>.   pynq porting guide., with these modifications:
+### Step 1 -  Zybo u-boot make command:
+```
+make zynq_zybo_config
+make
+```
+### Step 3 -  Zybo devicetree blob:
+The file to be edited is <a href="https://github.com/altuSemi/PYNQ4Zybo/blob/master/zynq-7000.dtsi" target="_blank">/linux-xlnx/arch/arm/boot/dts/zynq-zybo.dts</a>.
+On top of that, the dma package is using 3 generiq which should be defined in /linux-xlnx/arch/arm/boot/dts/
+
