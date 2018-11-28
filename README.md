@@ -72,9 +72,10 @@ The Zybo should boot and load the Linux kernel. The board can be accessed via UA
 
 ## Overlays
 This Pynq4Zybo porting guide was verified with two overlay designs:
-### 1. <a href="https://pynq.readthedocs.io/en/v2.0/overlay_design_methodology/overlay_tutorial.html" target="_blank"> Adder overlay</a> - a simple overlay which implements an adder in the PL. 
-Also explained in this <a href="https://www.youtube.com/watch?v=Dupyek4NUoI target="_blank"> video-guide</a>.
-Jupyter notebook can be found here:
+### 1. <a href="https://pynq.readthedocs.io/en/v2.0/overlay_design_methodology/overlay_tutorial.html" target="_blank"> Adder overlay</a>.
+This is a simple overlay which implements an adder in the PL. Also explained in this <a href="https://www.youtube.com/watch?v=Dupyek4NUoI" target="_blank"> video-guide</a>. 
+Zybo Jupyter notebook can be found <a href="https://github.com/altuSemi/PYNQ4Zybo/blob/master/jupyter_notebooks/AdderOverlay.ipynb" target="_blank"> here</a>.
+
 ### 2. <a href="https://www.youtube.com/watch?v=LoLCtSzj9BU" target="_blank"> Function acceleration with Zynq</a> - Low pass filter acceleration with PL logic and AXI dma.
 The contiguous memory allocation and dma access failed to work following this porting guide.
 Instead a python c extension was designed to pass data from python to the PL and back via the AXI dma. This extension is currently supporting a max buffer length of 16K word (unit32).
