@@ -33,7 +33,7 @@ source /opt/Xilinx/SDK/2016.4/settings64.sh
 source /opt/Xilinx/Vivado/2016.4/settings64.sh
 export CROSS_COMPILE=arm-xilinx-linux-gnueabi-
 ```
-The boot file compilation are based on steps 1 - 3 mentioned in this <a href="https://superuser.blog/pynq-linux-on-zedboard/" target="_blank">Zeb board</a>.   pynq porting guide., with these modifications:
+The boot file compilation are based on steps 1 - 3 mentioned in this <a href="https://superuser.blog/pynq-linux-on-zedboard/" target="_blank">Zeb board</a> pynq porting guide, with these modifications:
 ### Step 1 -  Zybo u-boot make command:
 ```
 make zynq_zybo_config
