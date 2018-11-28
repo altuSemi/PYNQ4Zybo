@@ -80,7 +80,7 @@ The contiguous memory allocation and dma access failed to work following this po
 Instead a python c extension was designed to pass data from python to the PL and back via the AXI dma. This extension is currently supporting a max buffer length of 16K word (unit32).
 The package is installed by copying the <a href="https://github.com/altuSemi/PYNQ4Zybo/tree/master/dma" target="_blank">dma</a> directory to the board (vias the samba server), and executing insidet he dma directory:
 ```
-pip3.6 instyall . 
+pip3.6 install . 
 ```
 The code of the dma package is based on the following references:
 
