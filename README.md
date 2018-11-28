@@ -34,14 +34,14 @@ source /opt/Xilinx/Vivado/2016.4/settings64.sh
 export CROSS_COMPILE=arm-xilinx-linux-gnueabi-
 ```
 The boot file compilation are based on steps 1 - 3 mentioned in this <a href="https://superuser.blog/pynq-linux-on-zedboard/" target="_blank">Zeb board</a> pynq porting guide, with these modifications:
-### Step 1 -  Zybo u-boot make command:
+### Step 1 modifications - modify Zybo u-boot make command:
 ```
 make zynq_zybo_config
 make
 ```
-### Step 3 -  Zybo devicetree blob:
+### Step 3 modifications - Zybo devicetree blob :
 The file to be edited is <a href="https://github.com/altuSemi/PYNQ4Zybo/blob/master/zynq-zybo.dts" target="_blank">/linux-xlnx/arch/arm/boot/dts/zynq-zybo.dts</a>.
-On top of that, the dma package is using 3 generic-uio which should be defined in <a href="https://github.com/altuSemi/PYNQ4Zybo/blob/master/zynq-7000.dtsi" target="_blank">/linux-xlnx/arch/arm/boot/dts/zynq-7000.dtsi</a>. The following should be added under 'amba':
+On top of that, the dma package mentioned below is using 3 generic-uio which should be defined in <a href="https://github.com/altuSemi/PYNQ4Zybo/blob/master/zynq-7000.dtsi" target="_blank">/linux-xlnx/arch/arm/boot/dts/zynq-7000.dtsi</a>. The following should be added under 'amba':
 ```
 amba: amba {
 		u-boot,dm-pre-reloc;
