@@ -82,9 +82,10 @@ PYNQ4Zybo Jupyter notebook can be found <a href="https://github.com/altuSemi/PYN
 
 ### 2. DMA overlay
 This overlay implements a AXI stream dma that transfers data from one address in the memory to another. It is based on the following reference:
+
 Lauri's Blog - AXI Direct Memory Access : 	https://lauri.xn--vsandi-pxa.com/hdl/zynq/xilinx-dma.html
 
-Vivado 2016.3 was used in the design process of the  <a href="https://github.com/altuSemi/PYNQ4Zybo/tree/master/overlays/dma target="_blank">dma overlay</a> , following the above guide.
+The <a href="https://github.com/altuSemi/PYNQ4Zybo/tree/master/overlays/dma target="_blank"> dma overlay</a> was designed in Vivado 2016.3.
 A python c extension was designed to pass data from python to the PL and back via the AXI dma, based on the c code in the above blog. This extension is currently supporting a max buffer length of 16K word (unit32).
 
 The package is installed by copying the <a href="https://github.com/altuSemi/PYNQ4Zybo/tree/master/dma" target="_blank">dma</a> directory to the board (via the samba server), and executing inside the dma directory:
