@@ -14,7 +14,7 @@ uImage          -   Kernel image file
 
 devicetree.dtb  -   device tree blob
 
-These files were compiled for  the Pynq-Z1 and have to be replaced with files that are compiled for the Zybo board. The 2nd partition which includes the linux root file system (and the pynq package). This partition can remain as is, beside a package suggested below for dma access from python.
+These files were compiled for  the Pynq-Z1 and have to be replaced with files that are compiled for the Zybo board. The 2nd partition which includes the linux root file system (and the pynq package), can remain as is, beside a package suggested below for dma access from python.
 
 ## Compiling u-boot and linux kernel for Zybo
 
