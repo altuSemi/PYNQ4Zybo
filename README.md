@@ -7,9 +7,13 @@ Pynq repository was not targeted for the Zybo board. However, since the Zybo boa
 ## Precompiled Image
 
 The first step is to  <a href="https://files.digilent.com/Products/PYNQ/pynq_z1_v2.0.img.zip" target="_blank">download the precompiled image</a> and write the image to a micro SD card. This image is targeted for Pynq Z1 board. Its BOOT partition includes the following files:
+
 BOOT.bin        -   Binary boot file, which includes the Zynq bitstream, FirstStageBootLoader and U-boot
+
 uImage          -   Kernel image file
+
 devicetree.dtb  -   device tree blob
+
 These files were compiled for  the Pynq-Z1 and have to be replaced with files that are compiled for the Zybo board. The 2nd partition which includes the linux root file system (and the pynq package). This partition can remain as is, beside a package suggested below for dma access from python.
 
 ## Compiling u-boot and linux kernel for Zybo
