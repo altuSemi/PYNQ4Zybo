@@ -74,7 +74,7 @@ The Zybo should boot and load the Linux kernel. The board can be accessed via UA
 This Pynq4Zybo porting guide was verified with three overlay designs:
 ### 1. <a href="https://pynq.readthedocs.io/en/v2.0/overlay_design_methodology/overlay_tutorial.html" target="_blank"> Adder overlay</a>.
 This is a simple overlay which implements an adder in the PL. Also explained in this <a href="https://www.youtube.com/watch?v=Dupyek4NUoI" target="_blank"> video-guide</a>. 
-Zybo Jupyter notebook can be found <a href="https://github.com/altuSemi/PYNQ4Zybo/blob/master/jupyter_notebooks/AdderOverlay.ipynb" target="_blank"> here</a>.
+PYNQ4Zybo Jupyter notebook can be found <a href="https://github.com/altuSemi/PYNQ4Zybo/blob/master/jupyter_notebooks/AdderOverlay.ipynb" target="_blank"> here</a>.
 
 ### 2. dma overlay
 This overlay implements a AXI stream dma that transfers data from one address in the memory to another. It is based on the following reference:
@@ -93,13 +93,13 @@ Returning a numphy array from c: 		http://acooke.org/cute/ExampleCod0.html
 
 Enhancing Python with Custom C Extensions:	https://stackabuse.com/enhancing-python-with-custom-c-extensions/
 
-The dma overlay can be tested with the following <a href="https://busybox.net/about.html" target="_blank">busybox</a> <a href=https://github.com/altuSemi/PYNQ4Zybo/blob/master/dma/busybox.sh target="_blank">script</a>, or with this <a href="https://github.com/altuSemi/PYNQ4Zybo/blob/master/jupyter_notebooks/dma.ipynb" target="_blank">jupyter notebook</a>.
+The dma overlay can be tested with the following <a href="https://busybox.net/about.html" target="_blank">busybox</a> <a href=https://github.com/altuSemi/PYNQ4Zybo/blob/master/dma/busybox.sh target="_blank">script</a>, or with this <a href="https://github.com/altuSemi/PYNQ4Zybo/blob/master/jupyter_notebooks/dma.ipynb" target="_blank">PYNQ4Zybo jupyter notebook</a>.
 <a href=http://fpga.org/2013/05/28/how-to-design-and-access-a-memory-mapped-device-part-two/ target="_blank">generic-uio</a> was used instead of devmem in the c code of teh dma package to overcome non-root permissions issue.
 
 ### 3. <a href="https://www.youtube.com/watch?v=LoLCtSzj9BU" target="_blank"> Function acceleration with Zynq</a> - Low pass filter acceleration with PL logic and AXI dma.
 The original pynq <a href="https://github.com/Xilinx/PYNQ/tree/v2.0/sdbuild/packages/libsds" target="_blank"> libsds</a> function for contiguous memory allocation and dma access <a href="https://groups.google.com/forum/?utm_medium=email&utm_source=footer#!msg/pynq_project/rvez-UpGODY/oN9FusK3BQAJfailed" target="_blank">failed </a> to work following this porting guide. Instead the dma package above was used.
 
-The <a href="https://github.com/altuSemi/PYNQ4Zybo/blob/master/jupyter_notebooks/FIR%20accelerator.ipynb" target="_blank"> FIR accelerator notebook </a> is using the dma package to perform the FIR calculation acceleration using the PL DSP blocks, and achieves a X14 acceleration ratio with respect to software based FIR.
+The PYNQ4Zybo <a href="https://github.com/altuSemi/PYNQ4Zybo/blob/master/jupyter_notebooks/FIR%20accelerator.ipynb" target="_blank"> FIR accelerator notebook </a> is using the dma package to perform the FIR calculation acceleration using the PL DSP blocks, and achieves a X14 acceleration ratio with respect to software based FIR.
 	
 
 
