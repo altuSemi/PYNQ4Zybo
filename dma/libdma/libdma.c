@@ -15,21 +15,6 @@
 #include <stdint.h>
 #include "libdma.h"
 
-/*Allocate contiguous DRAM buffer*/
-/*unsigned int * DRAMAlloc(unsigned int len) {
-        unsigned int *buffer = malloc(len * sizeof(unsigned int));
-        buffer[0]=1974;
-        buffer[1]=9;
-        buffer[2]=27;
-        return buffer;
-}*/
-
-
-/* Create a function that can free our pointers */
-void DRAMFreePtr(void *ptr)
-{   
-    free(ptr);
-}
 
 void DMASet(unsigned int* dma_virtual_address, unsigned int offset, unsigned int value) {
     dma_virtual_address[offset>>2] = value;

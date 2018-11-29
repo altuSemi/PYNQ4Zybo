@@ -15,11 +15,9 @@
 #define S2MM_DESTINATION_ADDRESS 0x48
 #define S2MM_LENGTH 0x58
 
-/*Allocate contiguous DRAM buffer*/
-//unsigned int * DRAMAlloc(unsigned int len);
-
-/* Create a function that can free our pointers */
-void DRAMFreePtr(void *ptr);
+#define CONTROL_PHY_ADD 0x40400000
+#define BUFFER0_PHY_ADD 0x01000000
+#define BUFFER1_PHY_ADD 0x02000000
 
 typedef enum { false, true } bool;
 
