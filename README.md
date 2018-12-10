@@ -71,7 +71,10 @@ amba: amba {
 		};
 ```
 ## Booting PYNQ on Zybo
-Next step is to copy the boot files over the original files in the PYNQ sdcard BOOT partition. Then place the sd card in the Zybo sd card slot, set the boot jumper to boot from sd-card, and turn on the board.
+Next step is to copy the boot files over the original files in the PYNQ sdcard BOOT partition. 
+The pre-compiled Zybo boot files were <a href="https://github.com/altuSemi/PYNQ4Zybo/tree/master/kernel" target="_blank"> committed</a> to this repository.
+
+Then place the sd card in the Zybo sd card slot, set the boot jumper to boot from sd-card, and turn on the board.
 The Zybo should boot and load the Linux kernel. The board can be accessed via UART, remote login or the Jupyter notebook portal as described in the <a href="https://PYNQ.readthedocs.io/en/v2.0/getting_started.html" target="_blank"> PYNQ documentation page</a>.
 
 ## Overlays
